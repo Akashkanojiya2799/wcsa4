@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  	<define name="Functional"></define>
+  	<define name="Integration"></define>
+  	<define name="System"></define>
+  	
+  	<run>
+  		<include name="Functional"></include>
+  	</run>
+  	
+  </groups>   
+  	<classes>
+      <class name="testNGpack2.GroupFlag2"/>
+      <class name="testNGpack2.GroupFlag1"/>
+      <class name="testNGpack2.GroupFlag3"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
